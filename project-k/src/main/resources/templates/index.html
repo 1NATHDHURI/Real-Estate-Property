@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-text">
+      <h1>BELGAVI PROPERTIES</h1>
+      <p>Let's begin new Life !...</p>
+      <button class="small-button" onclick="location.href='map-log'">View Your Member</button>
+      
+    </div>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form id="registrationForm" action="create" method="post">
+        <label for="fullname">First Name:</label>
+        <input type="text" id="fullname" name="name" required />
+        <br />
+        <br />
+        <label for="username">Last name:</label>
+        <input type="text" id="username" name="lname" required />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <label for="mobile">Mobile Number:</label>
+        <input type="number" id="email" name="number" required/>
+
+        <br />
+        <br />
+
+        <div class="select-container">
+          <div class="select-group">
+            <label for="choice">Select Choice:</label>
+            <select id="choice" name="choice" required>
+              <option value="buyer">Buyer</option>
+              <option value="seller">Seller</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="area">Select Area:</label>
+            <input type="number" id="area" name="area" required />
+          </div>
+
+          <div class="select-group">
+            <label for="property">Select Property:</label>
+            <select id="property" name="property" required>
+              <option value="acre">Acre</option>
+              <option value="guntha">Guntha</option>
+              <option value="square">Sq.ft</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <br />
+        <button type="submit">Register</button>
+      </form>
+      
+    </div>
+    
+  </body>
+</html>

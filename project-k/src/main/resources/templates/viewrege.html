@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Users</title>
+<link rel="stylesheet" href="viewrege.css">
+</head>
+<body>
+ <h2> All Member</h2>
+ <table border="1">
+ <thead style="background-color:skyblue;">
+ <tr>
+ <td><b>First Name</b></td>
+ <td><b>Last Name</b></td>
+  <td><b>Email</b></td>
+  <td><b>Phone</b></td>
+  <td><b>Choice</b></td>
+  <td><b>Area</b></td>
+  <td><b>Property</b></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="rlist : ${rlist}">
+  <td th:text="${rlist.name}"></td>
+  <td th:text="${rlist.lname}"></td>
+    <td th:text="${rlist.email}"></td>
+    <td th:text="${rlist.number}"></td>
+    <td th:text="${rlist.choice}"></td>
+    <td th:text="${rlist.area}"></td>
+    <td th:text="${rlist.property}"></td>
+    </tr>
+  </tbody>
+ </table>
+</body>
+</html>
